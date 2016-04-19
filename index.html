@@ -11,20 +11,34 @@
                 <div class="logo">
                     <span>ТЕХНОМАРТ</span>
                 </div>
-                <label>Поиск:</label>
-                <input type="text" name="search" value="">
-                <a href="#">Закладки:0</a>
-                <a href="#">Корзина:0</a>
-                <a class="make-order" href="#">Оформить заказ</a>
+                <form class="search" action="#" method="get">
+                    <input type="search" placeholder="Поиск:">
+                    <input type="submit" value="Искать">
+                </form>
+                <div class="conteiner">
+                    <a href="#">Закладки:0</a>
+                    <a href="#">Корзина:0</a>
+                </div>
+                <div class="make-order">
+                    <a href="#">Оформить заказ</a>
+                </div>                
             </div>
             <div class="menu">
                 <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-                <div class="address">
-                    <b>+7 (812) 555-05-55</b>
+                <div class="contacts">
+                    <div class="phone">
+                        <strong>+7 (812) 555-05-55</strong>
+                    </div>                    
                     <p>г.Санкт-Петерург, ул.Б.Конюшенная, д.19/8</p>
-                </div>                
-                <a class="login" href="#">Вход</a>
-                <a class="checkin" href="#">Регистрация</a>
+                </div>
+                <div class="guest-panel">
+                    <div class="login">
+                        <a href="#">Вход</a>
+                    </div>
+                    <div class="checkin">
+                        <a href="#">Регистрация</a>
+                    </div>
+                </div>
                 <nav class="navigation">
                     <ul>
                         <li>
@@ -53,68 +67,161 @@
             </div>
         </header>
         <main>
-            <section class="promo">
-                <div class="materials">
-                    <b>Материалы</b>
-                    <a href="#">НА ЛЮБОЙ ВКУС</a>
+            <div class="promo">
+                <div class="materials new" >
+                    <span>Материалы</span>
                     <img src="#" width="" height="" alt="Ведро">
+                    <div class="promo-btn">
+                        <a href="#">НА ЛЮБОЙ ВКУС</a>
+                    </div>
                 </div>
                 <div class="tool">
-                    <b>Инструмент</b>
-                    <a href="#">НА ВСЕ СЛУЧАИ</a>
+                    <span>Инструмент</span>
                     <img src="#" width="" height="" alt="Дрель">
+                    <div class="promo-btn">
+                        <a href="#">НА ВСЕ СЛУЧАИ</a>
+                    </div>
                 </div>
                 <div class="machines">
-                    <b>Техника</b>
-                    <a href="#">ДЛЯ СТРОЙКИ</a>
+                    <span>Техника</span>
                     <img src="#" width="" height="" alt="Трактор">
+                    <div class="promo-btn">
+                        <a href="#">ДЛЯ СТРОЙКИ</a>
+                    </div>
                 </div>
-                <div class="gallery">
-                    <figure class="gallery-content">
-                        <img src="#" width="300" height="180" alt="Галерея">
-                    </figure>
-                    <a href="#">Открыть каталог</a>
+                <div class="gallery-1">
+                    <img src="#" width="300" height="180" alt="Галерея">
+                    <div class="gallery-description">
+                        <h2>ПЕРФОРАТОРЫ</h2>
+                        <p>Настоящие мужские игрушки</p>
+                        <button class="gallery-left">Назад</button>
+                        <button class="gallery-right">Вперед</button>
+                        <button class="slider-1">Слайдер 1</button>
+                        <button class="slider-2">Слайдер 2</button>
+                        <div class="gallery-btn">
+                            <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-2">
+                    <img src="#" width="300" height="180" alt="Галерея">
+                    <div class="gallery-description">
+                        <h2>ДРЕЛИ</h2>
+                        <p>Соседям на радость!</p>
+                        <button class="gallery-left">Назад</button>
+                        <button class="gallery-right">Вперед</button>
+                        <button class="slider-1">Слайдер 1</button>
+                        <button class="slider-2">Слайдер 2</button>
+                        <div class="gallery-btn">
+                            <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="sales">
-                    <b>Скидки 50%</b>
-                    <a href="#">НА 350 ТОВАРОВ</a>
+                    <span>Скидки 50%</span>
                     <img src="#" width="" height="" alt="Корзина">
+                    <div class="promo-btn">
+                        <a href="#">НА 350 ТОВАРОВ</a>
+                    </div>
                 </div>
                 <div class="delivery">
-                    <b>Доставка</b>
-                    <a href="#">БЕСПЛАТНО</a>
+                    <span>Доставка</span>
                     <img src="#" width="" height="" alt="Машина">
+                    <div class="promo-btn">
+                        <a href="#">БЕСПЛАТНО</a>
+                    </div>
                 </div>
-            </section>
-            <section class="goods">
+            </div>
+            <div class="goods">
                 <div class="goods-hat">
                     <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-                    <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+                    <div class="goods-btn">
+                        <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+                    </div>
                 </div>
-                <div card-product-1>
+                <div class="product-1">
                     <img src="#" width="" height="" alt="Изображение товара">
                     <h3>Перфоратор BOSH BFG 9000</h3>
                     <span>32500р</span>
-                    <a href="#">25500 Р.</a>
+                    <div class="product-btn">
+                        <a href="#">25500 Р.</a>
+                    </div>                    
                 </div>
-                 <div card-product-2>
-                     <img src="#" width="" height="" alt="Изображение товара">
+                <div class="product-1-hover">
+                    <div class="buy">
+                        <a href="#">КУПИТЬ</a>
+                    </div>
+                    <div class="to-bookmarks">
+                        <a href="#">В ЗАКЛАДКИ</a>
+                    </div>
+                    <h3>Перфоратор BOSH BFG 9000</h3>
+                    <span>32500р</span>
+                    <div class="product-btn">
+                        <a href="#">25500 Р.</a>
+                    </div>                    
+                </div>
+                 <div class="product-2">
+                    <img src="#" width="" height="" alt="Изображение товара">
                     <h3>Перфоратор BOSH BFG 3000</h3>
                     <span>22500р</span>
-                    <a href="#">15500 Р.</a>
+                    <div class="product-btn">
+                        <a href="#">15500 Р.</a> 
+                    </div>
                 </div>
-                 <div card-product-3>
-                     <img src="#" width="" height="" alt="Изображение товара">
+                <div class="product-2-hover">
+                    <div class="buy">
+                        <a href="#">КУПИТЬ</a>
+                    </div>
+                    <div class="to-bookmarks">
+                        <a href="#">В ЗАКЛАДКИ</a>
+                    </div>
+                    <h3>Перфоратор BOSH BFG 3000</h3>
+                    <span>22500р</span>
+                    <div class="product-btn">
+                        <a href="#">15500 Р.</a>
+                    </div>                    
+                </div>
+                <div class="product-3">
+                    <img src="#" width="" height="" alt="Изображение товара">
                     <h3>Перфоратор BOSH BFG 6000</h3>
                     <span>30500р</span>
-                    <a href="#">25500 Р.</a>
+                    <div class="product-btn">
+                        <a href="#">25500 Р.</a>
+                    </div>
                 </div>
-                 <div card-product-5>
-                     <img src="#" width="" height="" alt="Изображение товара">
+                <div class="product-3-hover">
+                    <div class="buy">
+                        <a href="#">КУПИТЬ</a>
+                    </div>
+                    <div class="to-bookmarks">
+                        <a href="#">В ЗАКЛАДКИ</a>
+                    </div>
+                    <h3>Перфоратор BOSH BFG 6000</h3>
+                    <span>30500р</span>
+                    <div class="product-btn">
+                        <a href="#">25500 Р.</a>
+                    </div>                    
+                </div>
+                <div class="product-4 new">
+                    <img src="#" width="" height="" alt="Изображение товара">
                     <h3>Перфоратор BOSH BFG 2000</h3>
-                    <a href="#">12500 Р.</a>
+                    <div class="product-btn">
+                        <a href="#">12500 Р.</a>
+                    </div>
                 </div>
-            </section>
+                <div class="product-4-hover">
+                    <div class="buy">
+                        <a href="#">КУПИТЬ</a>
+                    </div>
+                    <div class="to-bookmarks">
+                        <a href="#">В ЗАКЛАДКИ</a>
+                    </div>
+                    <h3>Перфоратор BOSH BFG 2000</h3>
+                    <div class="product-btn">
+                        <a href="#">12500 Р.</a>
+                    </div>                    
+                </div>
+            </div>
             <section class="producers">
                 <div class="producers-hat">
                     <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
@@ -163,7 +270,7 @@
                     </ul>
                 </div>
                 <h3>ДОСТАВКА</h3>
-                <p>Мы с удовольствие доставим ваштовар прямо
+                <p>Мы с удовольствие доставим ваш товар прямо
                 к вашему подъезду соверенно есплатно!
                 Ведь мы неплохо заработаем,
                 поднимая егонаваш этаж!</p>

@@ -20,9 +20,7 @@
             <div class="menu">
                 <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
                 <div class="contacts">
-                    <div class="phone">
-                        <span>+7 (812) 555-05-55</span>
-                    </div>                    
+                    <div class="phone">+7 (812) 555-05-55</div>                    
                     <p>г.Санкт-Петерург, ул.Б.Конюшенная, д.19/8</p>
                 </div>
                 <div class="authorization">
@@ -76,17 +74,15 @@
                         <a href="#">Инструмент</a>
                     </li>
                     <li>
-                        <a href="#">Перфораторы</a>
+                        <span>Перфораторы</span>
                     </li>
                 </ul>
             </div>
             <h1>Перфораторы</h1>
             <form class="filter" action="#" method="get">
-                <div class="filter-hat">
-                    <span>Фильтр:</span>
-                </div>
-                <div class="price">
-                    <h2>Цена:</h2>
+                <div class="filter-hat">Фильтр:</div>
+                <fieldset class="price">
+                    <legend>Цена:</legend>
                     <div class="range-controls">
                         <div class="scale">
                             <div class="bar"></div>
@@ -98,9 +94,9 @@
                         <input class="min-price" type="text" value="0"> -
                         <input class="max-price" type="text" value="30000">
                     </div>
-                </div>
-                <div class="producers">
-                    <h2>Производители:</h2>
+                </fieldset>
+                <fieldset class="producers">
+                    <legend>Производители:</legend>
                     <ul>
                         <li>
                             <input type="checkbox" id="answer1" name="producer" value="checkbox1">
@@ -123,9 +119,9 @@
                             <label for="answer5">Hitachi</label>
                         </li>
                     </ul>
-                </div>
-                <div class="power">
-                    <h2>Питание</h2>
+                </fieldset>
+                <fieldset class="power">
+                    <legend>Питание</legend>
                     <ul>
                         <li>
                             <input type="radio" id="answers1" name="power" value="radio1">
@@ -136,7 +132,7 @@
                             <label for="answers2">Сетевые</label>
                         </li>
                     </ul>
-                </div>
+                </fieldset>
                 <button class="show" type="submit">Показать</button>
             </form>
             <div class="catalog-body">
@@ -174,7 +170,7 @@
                         <a class="product-btn" href="#">25500 Р.</a>                  
                     </div>
                     <div class="product-3 new">
-                        <img src="#" width="122" height="120" alt="Изображение товара"> <!-- не нашла картинки в файле psd на этот товар -->
+                        <img src="#" width="127" height="112" alt="Изображение товара">
                         <a class="buy" href="#">Купить</a>
                         <a class="to-bookmarks" href="#">В закладки</a>
                         <h3>Перфоратор BOSH BFG 2000</h3>
@@ -230,7 +226,7 @@
                 <div class="pages">
                     <ul>
                         <li>
-                            <a class="page-btn" href="#">1</a>
+                            <span class="page-btn">1</span>
                         </li>
                         <li>
                             <a class="page-btn" href="#">2</a>
@@ -246,15 +242,13 @@
             </div>
             <div class="service">
                 <h2>Пара слов о перфораторах</h2>
-                <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+                <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+                <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </div>
         </main>
         <footer class="main-footer">
             <div class="footer-menu">
-                <div class="logo">
-                    <span>Техномарт</span>
-                </div>
+                <a class="logo">Техномарт</a>
                 <p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
                 +7(812)555-05-55</p>
                 <nav class="footer-navigation">
@@ -290,10 +284,8 @@
                 </nav>                
             </div>
             <div class="footer-info">
-                <div class="copyright">
-                    <p>2010-2016 Компания "Техномарт"
-                    Все права защищены</p>
-                </div>
+                <p class="copyright">2010-2016 Компания "Техномарт"
+                Все права защищены</p>
                 <div class="social">
                     <a class="vk" href="#">VK</a>
                     <a class="facefook" href="#">F</a>

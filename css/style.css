@@ -4,6 +4,8 @@ body {
     color: #000000;
     font-weight: normal;
     font-family: 'PT Sans Regular', 'TP Sans', sans-serif;
+    width: 1200px;
+/*    margin: 0 auto;*/
 }
 
 .gallery h2 {
@@ -15,10 +17,216 @@ body {
 }
 
 .goods h2,
-.produsers h2 {
+.producers h2 {
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
     font-weight: normal;
     font-family: 'Cuprum Regular', Cuprum, sans-serif;
+    
+    float: left;
+}
+
+.main-header {
+    min-height: 320px;
+    background: #f1f5f7;
+    margin-bottom: 60px;
+}
+
+.top-menu {
+    background: #293449;
+    margin-bottom: 29px;
+}
+
+.center {
+    width: 940px;
+    margin: 0 auto;
+    outline: 1px solid yellow;
+}
+
+.logo {
+    width: 220px;
+    min-height: 42px;
+    float: left;
+    margin-right: 15px;
+}
+
+.search {
+    width: 250px;
+    min-height: 42px;
+    float: left;
+    margin-right: 15px;
+}
+
+.container {
+    width: 130px;
+    min-height: 42px;
+    float: left;
+    margin-right: 10px;
+}
+
+.make-order {
+    width: 150px;
+    min-height: 42px;
+    float: right;
+    margin-left: 10px;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.menu p:nth-child(1) {
+    width: 210px;
+    min-height: 100px;
+    float: left;
+    margin-left: 45px;
+    margin-top: 0;
+}
+
+.contacts {
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+}
+
+.guest-panel {
+    width: 300px;
+    min-height: 100px;
+    float: right;
+}
+
+.navigation {
+    width: 940px;
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 65px;
+    background: red;
+}
+
+.promo {
+    width: 940px;
+    min-height: 409px;
+    margin-bottom: 54px;
+}
+
+.materials,
+.tool {
+    width: 300px;
+    height: 123px;
+    float: left;
+    margin-right: 20px;
+    background: yellow;
+}
+
+.machines {
+    width: 300px;
+    height: 123px;
+    float: right;
+    margin-right: 0;
+    background: yellow;
+}
+
+.gallery {
+    width: 620px;
+    min-height: 266px;
+    margin-top: 20px;
+    float: left;
+}
+
+.sales,
+.delivery {
+    width: 300px;
+    height: 123px;
+    float: right;
+    margin-top: 20px;
+    background: yellow;
+}
+
+.goods {
+    width: 940px;
+    min-height: 427px;
+    margin-bottom: 22px;
+}
+
+.goods-hat,
+.producers-hat {
+    width: 940px;
+    min-height: 89px;
+    margin-bottom: 21px;
+    background: green;
+}
+
+.goods-btn,
+.producers-btn {
+    width: 253px;
+    height: 38px;
+    float: right;
+    margin-right: 24px;
+    margin-top: 25px;
+    margin-bottom: 26px;
+    background: red;
+}
+
+.product-1,
+.product-2, 
+.product-3,
+.product-4 {
+    width: 220px;
+    min-height: 317px;
+    float: left;
+    margin-right: 20px;
+    outline: 1px solid black;
+}
+
+.goods div:nth-child(4n+1) {
+    float: right;
+    margin-right: 0;
+}
+
+.producers {
+    width: 940px;
+    min-height: 419px;
+    margin-bottom: 66px;
+}
+
+.producer-bosch,
+.producer-makit,
+.producer-dewalt, 
+.producer-interskol,
+.producer-hitachi,
+.producer-lg,
+.producer-aeg,
+.producer-metabo {
+    width: 220px;
+    min-height: 144px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    outline: 1px solid black;
+}
+
+.producers a:nth-child(4n) {
+    float: right;
+    margin-right: 0;
+}
+
+.services {
+    min-height: 522px;
+    background: #f2f6f8;
+}
+
+.services-info {
+    width: 940px;
+    min-height: 200px;
+    background: white;
+}
+
+.services-menu {
+    width: 240px;
+    min-height: 184px;
+    float: left;
+    margin-left: 40px;
 }

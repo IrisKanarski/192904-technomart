@@ -216,17 +216,50 @@ body {
 .services {
     min-height: 522px;
     background: #f2f6f8;
+    margin-bottom: 67px;
 }
 
 .services-info {
     width: 940px;
-    min-height: 200px;
+    min-height: 120px;
     background: white;
+    margin-top: 60px;
+    margin-bottom: 58px;
 }
 
 .services-menu {
     width: 240px;
-    min-height: 184px;
+    min-height: 185px;
     float: left;
-    margin-left: 40px;
+    background: orange;
 }
+
+.services-delivery,
+.warranty,
+.credit {
+    width: 620px;
+    min-height: 185px;
+    float: right;
+    background: orange;
+}
+
+.company {
+    width: 540px;
+    min-height: 400px;
+    float: left;
+    background: green;
+}
+
+.maps {
+    width: 300px;
+    min-height: 400px;
+    float: right;
+    background: green;
+    margin-bottom: 55px;
+}
+
+.main-footer {
+    background: #32425c;
+}
+
+

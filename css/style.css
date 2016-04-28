@@ -103,7 +103,6 @@ body {
     float: left;
     margin-top: 16px;
     margin-bottom: 65px;
-    background: red;
 }
 
 .promo {
@@ -118,7 +117,6 @@ body {
     height: 123px;
     float: left;
     margin-right: 20px;
-    background: yellow;
 }
 
 .machines {
@@ -126,7 +124,6 @@ body {
     height: 123px;
     float: right;
     margin-right: 0;
-    background: yellow;
 }
 
 .gallery {
@@ -142,7 +139,6 @@ body {
     height: 123px;
     float: right;
     margin-top: 20px;
-    background: yellow;
 }
 
 .goods {
@@ -156,7 +152,6 @@ body {
     width: 940px;
     min-height: 89px;
     margin-bottom: 21px;
-    background: green;
 }
 
 .goods-btn,
@@ -167,7 +162,6 @@ body {
     margin-right: 24px;
     margin-top: 25px;
     margin-bottom: 26px;
-    background: red;
 }
 
 .product-1,
@@ -231,7 +225,6 @@ body {
     width: 240px;
     min-height: 185px;
     float: left;
-    background: orange;
 }
 
 .services-delivery,
@@ -240,26 +233,81 @@ body {
     width: 620px;
     min-height: 185px;
     float: right;
-    background: orange;
 }
 
 .company {
     width: 540px;
     min-height: 400px;
     float: left;
-    background: green;
 }
 
 .maps {
     width: 300px;
     min-height: 400px;
     float: right;
-    background: green;
-    margin-bottom: 55px;
 }
 
-.main-footer {
+.main-footer {    
+    margin-top: 70px;
     background: #32425c;
 }
 
+.footer-menu {
+    min-height: 194px;
+}
 
+.footer-menu .logo{
+    min-height: 63px;
+}
+
+.footer-menu p {
+    width: 330px;
+    min-height: 50px;
+    float: left;
+    margin-left: -236px;
+    margin-top: 95px;
+}
+
+.footer-navigation {
+    width: 565px;
+    float: right;
+    margin-top: 42px;
+}
+
+.footer-info {
+    background: #293449;
+    min-height: 107px;
+}
+
+.footer-info p{
+    width: 240px;
+    min-height: 50px;
+    float: left;
+    margin-top: 35px;
+    margin-bottom: 31px;
+}
+.social {
+    width: 132px;
+    min-height: 43px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 35px;
+    margin-bottom: 31px;
+}
+
+.designed {
+    width: 115px;
+    min-height: 40px;
+    float: right;
+    margin-top: 35px;
+    margin-bottom: 31px;
+}
+
+.feedback {
+    width: 140px;
+    min-height: 40px;
+    float: left;
+    margin-left: 118px;
+    margin-top: 35px;
+    margin-bottom: 31px;
+}

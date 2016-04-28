@@ -6,6 +6,8 @@ body {
     font-family: 'PT Sans Regular', 'TP Sans', sans-serif;
     width: 1200px;
 /*    margin: 0 auto;*/
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .gallery h2 {
@@ -30,7 +32,7 @@ body {
 .main-header {
     min-height: 320px;
     background: #f1f5f7;
-    margin-bottom: 60px;
+/*    margin-bottom: 60px;*/
 }
 
 .top-menu {
@@ -92,7 +94,8 @@ body {
     margin-left: 50px;
 }
 
-.guest-panel {
+.guest-panel,
+.authorization {
     width: 300px;
     min-height: 100px;
     float: right;
@@ -108,6 +111,7 @@ body {
 .promo {
     width: 940px;
     min-height: 409px;
+    margin-top: 60px;
     margin-bottom: 54px;
 }
 
@@ -310,4 +314,20 @@ body {
     margin-left: 118px;
     margin-top: 35px;
     margin-bottom: 31px;
+}
+
+.catalog-title {
+    min-height: 59px;
+}
+
+.breadcrumbs {
+    float: left;
+    margin-top: 0;
+    background: green;
+}
+
+main h1 {
+    background: #f2f6f8;
+    min-height: 90px;
+    margin-top: 0;
 }

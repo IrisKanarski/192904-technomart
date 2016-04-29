@@ -5,9 +5,7 @@ body {
     font-weight: normal;
     font-family: 'PT Sans Regular', 'TP Sans', sans-serif;
     width: 1200px;
-/*    margin: 0 auto;*/
-    margin-left: 0;
-    margin-top: 0;
+    margin: 0 auto;
 }
 
 .gallery h2 {
@@ -148,7 +146,7 @@ body {
 .goods {
     width: 940px;
     min-height: 427px;
-    margin-bottom: 22px;
+/*    margin-bottom: 22px;*/
 }
 
 .goods-hat,
@@ -171,15 +169,22 @@ body {
 .product-1,
 .product-2, 
 .product-3,
-.product-4 {
+.product-4,
+.product-5,
+.product-6,
+.product-7,
+.product-8,
+.product-9 {
     width: 220px;
     min-height: 317px;
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
     outline: 1px solid black;
 }
 
-.goods div:nth-child(4n+1) {
+.goods div:nth-child(4n+1),
+.catalog div:nth-child(3n) {
     float: right;
     margin-right: 0;
 }
@@ -243,6 +248,7 @@ body {
     width: 540px;
     min-height: 400px;
     float: left;
+    margin-bottom: 70px;
 }
 
 .maps {
@@ -252,7 +258,7 @@ body {
 }
 
 .main-footer {    
-    margin-top: 70px;
+/*    margin-top: 70px;*/
     background: #32425c;
 }
 
@@ -323,11 +329,49 @@ body {
 .breadcrumbs {
     float: left;
     margin-top: 0;
-    background: green;
 }
 
 main h1 {
     background: #f2f6f8;
     min-height: 90px;
     margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.filter {
+    width: 220px;
+    min-height: 750px;
+    float: left;
+    margin-right: 20px;
+}
+
+.sort {
+    width: 700px;
+    min-height: 38px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.catalog {
+    width: 700px;
+    float: right;
+    margin-bottom: 32px;
+}
+
+.pages {
+    float: left;
+    margin-left: 240px;
+    min-height: 38px;
+    width: 284px;
+    margin-bottom: 60px;
+}
+
+.service {
+    background: #f2f6f8;
+    min-height: 260px;
+}
+
+.service h2,
+.service p {
+    float: left;
 }

@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
+		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="main-catalog">
         <header class="main-header">
             <div class="top-menu">
                 <div class="center clearfix">
@@ -14,7 +17,7 @@
                         <input type="search" placeholder="Поиск:">
                         <input type="submit" value="Искать">
                     </form>
-                    <a class="container" href="#">Закладки:0</a>
+                    <a class="container" href="#">Закладки: 0</a>
                     <a class="container" href="#">Корзина:10</a>
                     <a class="make-order" href="#">Оформить заказ</a>        
                 </div>                
@@ -83,7 +86,7 @@
                 </div>
                 <h1>Перфораторы</h1>
                 <form class="filter" action="#" method="get">
-                    <div class="filter-hat">Фильтр:</div>
+                    <div class="filter-sort filter-hat">Фильтр:</div>
                     <fieldset class="price">
                         <legend>Цена:</legend>
                         <div class="range-controls">
@@ -94,27 +97,27 @@
                             <div class="toggle max-toggle"></div>
                         </div>
                         <div class="price-controls">
-                            <input class="min-price" type="text" value="0"> -
-                            <input class="max-price" type="text" value="30000">
+                            <input class="min-price" name="min-price" type="text" value="0">
+                            <input class="max-price" name="max-price" type="text" value="30000">
                         </div>
                     </fieldset>
-                    <fieldset class="producer">
+                    <fieldset class="filtr-producer">
                         <legend>Производители:</legend>
                         <ul>
                             <li>
-                                <input type="checkbox" id="answer1" name="producer" value="checkbox1">
+                                <input type="checkbox" id="answer1" name="producer">
                                 <label for="answer1">Bosch</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="answer2" name="producer" value="checkbox2">
+                                <input type="checkbox" id="answer2" name="producer">
                                 <label for="answer2">Интерскол</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="answer3" name="producer" value="checkbox3">
+                                <input type="checkbox" id="answer3" name="producer">
                                 <label for="answer3">Makita</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="answer4" name="producer" value="checkbox4">
+                                <input type="checkbox" id="answer4" name="producer">
                                 <label for="answer4">Dewalt</label>
                             </li>
                             <li>
@@ -139,21 +142,23 @@
                     <button class="show" type="submit">Показать</button>
                 </form>
                 <div class="catalog-body">
-                    <div class="sort">
+                    <div class="filter-sort sort">
                         <span>Сортировка:</span>
-                        <ul>
-                            <li>
-                                <a class="item" href="#">По цене</a>
-                            </li>
-                            <li>
-                                <a class="item" href="#">По типу</a>
-                            </li>
-                            <li>
-                                <a class="item" href="#">По функционалу</a>
-                            </li>
-                        </ul>
-                        <div class="icon up"></div>
-                        <div class="icon down"></div>
+                        <div class="sort-items">
+							<ul>
+								<li class="active">
+									<a class="item" href="#">По цене</a>
+								</li>
+								<li>
+									<a class="item" href="#">По типу</a>
+								</li>
+								<li>
+									<a class="item" href="#">По функционалу</a>
+								</li>
+							</ul>
+							<div class="sort-icon up active"></div>
+							<div class="sort-icon down"></div>
+                        </div>
                     </div>
                     <div class="catalog">
                         <div class="product">
@@ -263,11 +268,11 @@
                             <h3>Перфоратор BOSH BFG 2000</h3>
                             <span></span>
                             <a class="product-btn" href="#">12500 Р.</a> 
-                        </div>
+                        </div>  
                     </div>
                     <div class="pages">
                         <ul>
-                            <li>
+                            <li class="active">
                                 <span class="page-btn">1</span>
                             </li>
                             <li>
@@ -334,8 +339,8 @@
                     Все права защищены</p>
                     <div class="social">
                         <a class="vk" href="#">VK</a>
-                        <a class="facefook" href="#">F</a>
-                        <a classs="instagram" href="#">I</a>
+                        <a class="facebook" href="#">F</a>
+                        <a class="instagram" href="#">I</a>
                     </div>
                     <div class="communication">
                         <div class="feedback">

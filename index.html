@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
+<!--
         <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" rel="stylesheet">
+-->
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -15,11 +17,14 @@
                     <div class="logo">Техномарт</div>
                     <form class="search" action="#" method="get">
                         <input type="search" placeholder="Поиск:">
+						<label class="search-icon" ></label>
                         <input type="submit" value="Искать">
                     </form>
-                    <a class="container" href="#">Закладки: 0</a>
-                    <a class="container" href="#">Корзина: 0</a>
-                    <a class="make-order" href="#">Оформить заказ</a>
+                    <div class="order-preview">
+                        <a class="container bookmarks" href="#">Закладки: 0</a>
+                        <a class="container cart" href="#">Корзина: 0</a>
+                        <a class="make-order" href="#">Оформить заказ</a>        
+                    </div>
                 </div>  
             </div>
             <div class="menu center clearfix">
@@ -27,7 +32,7 @@
                 строительных материалов<br>
                 и инструментов для ремонта</p>
                 <div class="contacts">
-                    <div class="phone">+7 (812) 555-05-55</div>                    
+                    <div class="phone">+7 (812) 555-05-55</div>    
                     <p>г.Санкт-Петерург, ул.Б.Конюшенная, д.19/8</p>
                 </div>
                 <div class="guest-panel">
@@ -125,8 +130,8 @@
                         <a class="buy" href="#">Купить</a>
                         <a class="to-bookmarks" href="#">В закладки</a>
                     </div>
-                    <h3>Перфоратор BOSH BFG 9000</h3>
-                    <span>32500р</span>
+                    <h3>Перфоратор BOSCH BFG 9000</h3>
+                    <span>32500 Р.</span>
                     <a class="product-btn" href="#">25500 Р.</a>
                 </div>
                 <div class="product">
@@ -137,8 +142,8 @@
                         <a class="buy" href="#">Купить</a>
                         <a class="to-bookmarks" href="#">В закладки</a>
                     </div>
-                    <h3>Перфоратор BOSH BFG 3000</h3>
-                    <span>22500р</span>
+                    <h3>Перфоратор BOSCH BFG 3000</h3>
+                    <span>22500 Р.</span>
                     <a class="product-btn" href="#">15500 Р.</a>
                 </div>
                 <div class="product">
@@ -149,8 +154,8 @@
                         <a class="buy" href="#">Купить</a>
                         <a class="to-bookmarks" href="#">В закладки</a>
                     </div>
-                    <h3>Перфоратор BOSH BFG 6000</h3>
-                    <span>30500р</span>
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <span>30500 Р.</span>
                     <a class="product-btn" href="#">25500 Р.</a>
                 </div>                
                 <div class="product new">
@@ -161,7 +166,7 @@
                         <a class="buy" href="#">Купить</a>
                         <a class="to-bookmarks" href="#">В закладки</a>
                     </div>
-                    <h3>Перфоратор BOSH BFG 2000</h3>
+                    <h3>Перфоратор BOSCH BFG 2000</h3>
                     <span></span>
                     <a class="product-btn" href="#">12500 Р.</a>
                 </div>                
@@ -178,10 +183,10 @@
                     <img src="img/manufacturers/makita.jpg" width="123" height="40" alt="Makita">
                 </a>
                 <a class="producer" href="#">
-                    <img src="img/manufacturers/dewalt.jpg" width="146" height="44" alt="DeWalt">
+                    <img src="img/manufacturers/interskol.jpg" width="200" height="88" alt="Интерскол">                   
                 </a>
                 <a class="producer" href="#">
-                    <img src="img/manufacturers/interskol.jpg" width="200" height="88" alt="Интерскол">
+                     <img src="img/manufacturers/dewalt.jpg" width="146" height="44" alt="DeWalt">
                 </a>
                 <a class="producer" href="#">
                     <img src="img/manufacturers/hitachi.jpg" width="169" height="31" alt="Hitachi">
@@ -190,10 +195,10 @@
                     <img src="img/manufacturers/lg.jpg" width="121" height="73" alt="LG">
                 </a>
                 <a class="producer" href="#">
-                    <img src="img/manufacturers/aeg.jpg" width="151" height="96" alt="AEG">
+                    <img src="img/manufacturers/metabo.jpg" width="204" height="69" alt="Metabo">
                 </a>
                 <a class="producer" href="#">
-                    <img src="img/manufacturers/metabo.jpg" width="204" height="69" alt="Metabo">
+                    <img src="img/manufacturers/aeg.jpg" width="151" height="96" alt="AEG">
                 </a>
             </div>
             <div class="services">
@@ -216,7 +221,6 @@
                             </li>
                         </ul>
                     </div>
-<!--
                     <div class="services-delivery">
                         <h3>Доставка</h3>
                         <p>Мы с удовольствие доставим ваш товар прямо
@@ -225,7 +229,6 @@
                         поднимая его на ваш этаж!</p>
                         <img src="img/delivery.png" width="468" height="261" alt="Грузовик">
                     </div>
--->
 <!--
                     <div class="warranty">
                         <h3>Гарантия</h3>
@@ -237,6 +240,7 @@
                         <img src="img/warranty.png" width="389" height="283" alt="Медаль">
                     </div>
 -->
+<!--
                     <div class="credit">
                         <h3>Кредит</h3>
                         <p>Залезть в долгоую яму стало проще!
@@ -244,6 +248,7 @@
                         <a class="credit-orde" href="">Отправить заявку</a>
                         <img src="img/credit.png" width="465" height="285" alt="Доллары">
                     </div>    
+-->
                 </div>
             </div>
             <div class="clearfix center">
@@ -262,9 +267,11 @@
                 </div>
                 <div class="maps">
                     <h2>Контакты</h2>
-                    <p>Вы можете забрать товар сами,
+                    <p>Вы можете забрать товар сами,<br>
                     заехав в наш офис:</p>
-                    <img class="map" src="img/map.jpg" width="300" height="158" alt="Карта">
+<!--                    <a class="js-open-map" href="#">-->
+                        <img class="map js-open-map" src="img/map.jpg" width="300" height="158" alt="Карта">
+<!--                    </a>                    -->
                     <a class="link-btn" href="#">Заблудились? Напишите нам!</a>
                 </div>
             </div>
@@ -308,7 +315,7 @@
             </div>
             <div class="footer-info">
                 <div class="center clearfix">
-                    <p class="copyright">© 2010–2016 Компания «Техномарт»
+                    <p class="copyright">&copy; 2010–2016 Компания «Техномарт»
 Все права защищены</p>
                     <div class="social">
                         <a class="vk" href="#">VK</a>
@@ -330,6 +337,74 @@
         </footer>
         <div class="modal-content">
             <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <form class="write-us" action="#" method="post">
+                <div class="modal-body">
+                    <div class="modal-name">
+                        <label class="modal-text" for="name">Ваше имя:</label>
+                        <input class="modal-box" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+                    </div>
+                    <div class="modal-email">
+                        <label class="modal-text" for="email">Ваш e-mail:</label>
+                        <input class="modal-box" type="email" id="email" name="email" placeholder="Для отправки ответа">
+                    </div>
+                    <div class="modal-send">
+                        <label class="modal-text" for="text">Текст письма:</label>
+                        <textarea class="modal-box" id="text" name="text" placeholder="В свободной форме"></textarea>
+                    </div>   
+                </div>                             
+                <div class="modal-footer">
+                    <button class="send" type="submit">Отправить</button>
+                </div>
+            </form>
         </div>
+        <div class="modal-content-map">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>            
+        </div>
+        <script>
+            var link = document.querySelector(".link-btn");
+            var popup = document.querySelector(".modal-content");
+            var close = popup.querySelector(".modal-content-close");
+            var login = popup.querySelector("[name=name]");
+            var mapOpen = document.querySelector(".js-open-map");
+            var mapPopup = document.querySelector(".modal-content-map");
+            var mapClose = mapPopup.querySelector(".modal-content-close");
+
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.add("modal-content-show");
+                login.focus();
+            });
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-content-show");
+            });
+            window.addEventListener("keydown", function(event) {
+                if (event.keyCode === 27) {
+                    if (popup.classList.contains("modal-content-show")) {
+                        popup.classList.remove("modal-content-show");
+                    }
+                }
+            });
+            
+            
+
+            mapOpen.addEventListener("click", function(event) {
+                event.preventDefault();
+                mapPopup.classList.add("modal-content-show");
+            });
+
+            mapClose.addEventListener("click", function(event) {
+                event.preventDefault();
+                mapPopup.classList.remove("modal-content-show");
+            });
+
+            window.addEventListener("keydown", function(event) {
+                if (event.keyCode === 27) {
+                    if (mapPopup.classList.contains("modal-content-show")) {
+                mapPopup.classList.remove("modal-content-show");
+                }
+            }
+            });
+        </script>
     </body>
 </html>

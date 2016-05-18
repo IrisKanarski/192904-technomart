@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
     </head>
     <body class="main-catalog">
         <header class="main-header">
@@ -13,7 +13,7 @@
                     <a class="logo" href="index.html">Техномарт</a>
                     <form class="search" action="#" method="get">
                         <input type="search" placeholder="Поиск:">
-						<label class="search-icon" ></label>
+                        <label class="search-icon" ></label>
                         <input type="submit" value="Искать">
                     </form>
                     <div class="order-preview">
@@ -25,8 +25,8 @@
             </div>
             <div class="menu center clearfix">
                 <p>Интернет-магазин<br>
-                строительных материалов<br>
-                и инструментов для ремонта</p>
+                    строительных материалов<br>
+                    и инструментов для ремонта</p>
                 <div class="contacts">
                     <div class="phone">+7 (812) 555-05-55</div>   
                     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -147,19 +147,19 @@
                     <div class="filter-sort sort">
                         <span>Сортировка:</span>
                         <div class="sort-items">
-							<ul>
-								<li class="active">
-									<a class="item" href="#">По цене</a>
-								</li>
-								<li>
-									<a class="item" href="#">По типу</a>
-								</li>
-								<li>
-									<a class="item" href="#">По функционалу</a>
-								</li>
-							</ul>
-							<div class="sort-icon up active"></div>
-							<div class="sort-icon down"></div>
+                            <ul>
+                                <li class="active">
+                                    <a class="item" href="#">По цене</a>
+                                </li>
+                                <li>
+                                    <a class="item" href="#">По типу</a>
+                                </li>
+                                <li>
+                                    <a class="item" href="#">По функционалу</a>
+                                </li>
+                            </ul>
+                            <div class="sort-icon up active"></div>
+                            <div class="sort-icon down"></div>
                         </div>
                     </div>
                     <div class="catalog">
@@ -302,7 +302,7 @@
             <div class="footer-menu center clearfix">
                 <a class="logo" href="index.html">Техномарт</a>
                 <p>г. Санкт-Петербург, ул.  Б. Конюшенная, д. 19/8
-                +7 (812) 555-05-55</p>
+                    +7 (812) 555-05-55</p>
                 <nav class="footer-navigation">
                     <ul>
                         <li>
@@ -338,7 +338,7 @@
             <div class="footer-info">
                 <div class="center clearfix">
                     <p class="copyright">&copy; 2010–2016 Компания «Техномарт»
-Все права защищены</p>
+                        Все права защищены</p>
                     <div class="social">
                         <a class="vk" href="#">VK</a>
                         <a class="facebook" href="#">F</a>
@@ -357,9 +357,9 @@
                 </div>                
             </div>        
         </footer>
-		<div class="modal-content">
+        <div class="modal-content cart-modal">
             <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-            <div class="modal-body cart">
+            <div class="modal-body">
                 <h1>Товар добавлен в корзину!</h1>
             </div>                             
             <div class="modal-footer">
@@ -367,5 +367,6 @@
                 <button class="continue" type="submit">Продолжить покупки</button>
             </div>
         </div>
+        <script src="js/scripts.min.js"></script>
     </body>
 </html>

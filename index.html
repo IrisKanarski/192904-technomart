@@ -77,15 +77,14 @@
                     <a class="promo-btn" href="#">Для стройки</a>
                 </div>
                 <div class="gallery">
-                    <div class="gallery-1">
+                    <div class="gallery-1  active">
                         <img src="img/slider1.jpg" width="620" height="266" alt="Галерея">
                         <div class="gallery-description">
                             <h2>Перфораторы</h2>
                             <p>Настоящие мужские игрушки</p>
-                            <a class="gallery-btn" href="#">Открыть каталог</a>
+                            <a class="gallery-btn" href="catalog.html">Открыть каталог</a>
                         </div>
                     </div>
-<!--
                     <div class="gallery-2">
                         <img src="img/slider2.jpg" width="620" height="266" alt="Галерея">
                         <div class="gallery-description">
@@ -94,7 +93,6 @@
                             <a class="gallery-btn" href="#">Открыть каталог</a>
                         </div>
                     </div>
--->
                     <div class="control-btn">
                         <button class="gallery-left">Назад</button>
                         <button class="gallery-right">Вперед</button>
@@ -207,17 +205,17 @@
                     <div class="services-menu">
                         <ul>
                             <li>
-                                <a class="active" href="#">Доставка</a>
+                                <a class="delivery-link active" href="#">Доставка</a>
                             </li>
                             <li>
-                                <a href="#">Гарантия</a>
+                                <a href="#" class="warranty-link">Гарантия</a>
                             </li>
                             <li>
-                                <a href="#">Кредит</a>
+                                <a href="#" class="credit-link">Кредит</a>
                             </li>
-                        </ul>
+                        </ul>                        
                     </div>
-                    <div class="services-delivery">
+                    <div class="services-delivery active">
                         <h3>Доставка</h3>
                         <p>Мы с удовольствие доставим ваш товар прямо
                         к вашему подъезду соверенно бесплатно!
@@ -225,7 +223,6 @@
                         поднимая его на ваш этаж!</p>
                         <img src="img/delivery.png" width="468" height="261" alt="Грузовик">
                     </div>
-<!--
                     <div class="warranty">
                         <h3>Гарантия</h3>
                         <p>Если купленный у нас товар поломается или заискрит,
@@ -235,8 +232,6 @@
                         Дом уж восстановите как-нибудь сами.</p>
                         <img src="img/warranty.png" width="389" height="283" alt="Медаль">
                     </div>
--->
-<!--
                     <div class="credit">
                         <h3>Кредит</h3>
                         <p>Залезть в долгоую яму стало проще!
@@ -244,7 +239,6 @@
                         <a class="credit-orde" href="">Отправить заявку</a>
                         <img src="img/credit.png" width="465" height="285" alt="Доллары">
                     </div>    
--->
                 </div>
             </div>
             <div class="clearfix center">
@@ -265,9 +259,7 @@
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами,<br>
                     заехав в наш офис:</p>
-<!--                    <a class="js-open-map" href="#">-->
-                        <img class="map js-open-map" src="img/map.jpg" width="300" height="158" alt="Карта">
-<!--                    </a>                    -->
+                        <img class="map" src="img/map.jpg" width="300" height="158" alt="Карта">
                     <a class="link-btn" href="#">Заблудились? Напишите нам!</a>
                 </div>
             </div>
@@ -354,21 +346,56 @@
             </form>
         </div>
         <div class="modal-content-map">
-            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>            
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="448" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <script>
             var link = document.querySelector(".link-btn");
             var popup = document.querySelector(".modal-content");
             var close = popup.querySelector(".modal-content-close");
-            var login = popup.querySelector("[name=name]");
-            var mapOpen = document.querySelector(".js-open-map");
+            var mapOpen = document.querySelector(".maps img");
             var mapPopup = document.querySelector(".modal-content-map");
             var mapClose = mapPopup.querySelector(".modal-content-close");
-
+            var left = document.querySelector(".gallery-left");
+            var right = document.querySelector(".gallery-right");
+            var gallery1 = document.querySelector(".gallery-1");
+            var gallery2 = document.querySelector(".gallery-2");
+            var sliderleft = document.querySelector(".slider i:nth-child(1)");
+            var sliderright = document.querySelector(".slider i:nth-child(2)");
+            var delivery = document.querySelector(".services-delivery");
+            var warranty = document.querySelector(".warranty");
+            var credit = document.querySelector(".credit");
+            var menu1 = document.querySelector(".services-menu a.delivery-link");
+            var menu2 = document.querySelector(".services-menu a.warranty-link");
+            var menu3 = document.querySelector(".services-menu a.credit-link");
+            
+            left.addEventListener("click", function(move) {
+                gallery1.classList.toggle("active");
+                gallery2.classList.toggle("active");
+                sliderleft.classList.toggle("active");
+                sliderright.classList.toggle("active");
+            });
+            right.addEventListener("click", function(move) {
+                gallery1.classList.toggle("active");
+                gallery2.classList.toggle("active");
+                sliderleft.classList.toggle("active");
+                sliderright.classList.toggle("active");
+            });
+            sliderleft.addEventListener("click", function(move) {
+                gallery1.classList.toggle("active");
+                gallery2.classList.toggle("active");
+                sliderleft.classList.toggle("active");
+                sliderright.classList.toggle("active");
+            });
+            sliderright.addEventListener("click", function(move) {
+                gallery1.classList.toggle("active");
+                gallery2.classList.toggle("active");
+                sliderleft.classList.toggle("active");
+                sliderright.classList.toggle("active");
+            });              
             link.addEventListener("click", function(event) {
                 event.preventDefault();
                 popup.classList.add("modal-content-show");
-                login.focus();
             });
             close.addEventListener("click", function(event) {
                 event.preventDefault();
@@ -381,19 +408,13 @@
                     }
                 }
             });
-            
-            
-
             mapOpen.addEventListener("click", function(event) {
-                event.preventDefault();
                 mapPopup.classList.add("modal-content-show");
             });
-
             mapClose.addEventListener("click", function(event) {
                 event.preventDefault();
                 mapPopup.classList.remove("modal-content-show");
             });
-
             window.addEventListener("keydown", function(event) {
                 if (event.keyCode === 27) {
                     if (mapPopup.classList.contains("modal-content-show")) {
@@ -401,6 +422,28 @@
                 }
             }
             });
+           
+            menu1.addEventListener("click", function(event){
+                event.preventDefault();
+                Array.from(document.querySelectorAll(".services .active")).forEach(function(item, i, arr){ item.classList.remove("active");});
+                menu1.classList.add("active");
+                delivery.classList.add("active");
+            });
+            
+            menu2.addEventListener("click", function(event){
+                event.preventDefault();
+                Array.from(document.querySelectorAll(".services .active")).forEach(function(item, i, arr){ item.classList.remove("active");});
+                menu2.classList.add("active");
+                warranty.classList.add("active");
+            });
+            
+            menu3.addEventListener("click", function(event){
+                event.preventDefault();
+                Array.from(document.querySelectorAll(".services .active")).forEach(function(item, i, arr){ item.classList.remove("active");});
+                menu3.classList.add("active");
+                credit.classList.add("active");
+            });
+            
         </script>
     </body>
 </html>

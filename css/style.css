@@ -629,7 +629,7 @@ input[type="search"]:hover ~ .search-icon::before {
 }
 
 .gallery-1,
-.gallery-2{
+.gallery-2 {
     position: relative;
     margin: 0;
 }
@@ -700,6 +700,7 @@ input[type="search"]:hover ~ .search-icon::before {
     background: url(../img/icon-left.png) no-repeat;
     margin-left: 25px;
     cursor: pointer;
+    outline: none;
 }
 
 .gallery-right {
@@ -708,6 +709,7 @@ input[type="search"]:hover ~ .search-icon::before {
     background: url(../img/icon-right.png) no-repeat;
     margin-left: 520px;
     cursor: pointer;
+    outline: none;
 }
 
 .slider {
@@ -1128,6 +1130,7 @@ input[type="search"]:hover ~ .search-icon::before {
     min-height: 185px;
     float: right;
     position: relative;
+    display: none;
 }
 
 .services h3 {
@@ -1172,7 +1175,7 @@ input[type="search"]:hover ~ .search-icon::before {
 
 .services img {
     position: absolute;
-    top: 25px;
+    top: 0;
     right: 0;
 }
 
@@ -1572,11 +1575,11 @@ main h1 {
 .modal-content {
     width: 620px;
     color: #000000;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     margin-left: -310px;
-    margin-right: -216px;
+    margin-top: -215px;
     background: #ffffff;
     box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.3);
     border-top: 7px solid #ee3643;
@@ -1608,10 +1611,6 @@ main h1 {
     background-color: #ee3643;
     border-radius: 1px;
 }
-
-.modal-content-show {
-    display: block;
-} 
 
 .modal-content-close::before {
     transform: rotate(45deg);
@@ -2013,7 +2012,6 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .modal-content-map {
-    display: none;
     z-index: 100;
     position: fixed;
     top: 50%;
@@ -2022,10 +2020,12 @@ input[type="radio"]:checked ~ label::before {
     margin-left: -470px;
     width: 940px;
     height: 448px;
-    background: #444444 url("../img/map-big.jpg") no-repeat;
-    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.7);
+/*    background: #444444 url("../img/map-big.jpg") no-repeat;*/
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.7);    
+    display: none;
 }
 
+/*
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -2035,6 +2035,7 @@ input[type="radio"]:checked ~ label::before {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
+*/
 
 .modal-content .checkout,
 .modal-content .continue {
@@ -2088,5 +2089,26 @@ input[type="radio"]:checked ~ label::before {
 }
 
 .search-icon {
+    display: block;
+}
+
+.gallery .gallery-1,
+.gallery .gallery-2 {
+    display: none;
+}
+
+.gallery .active {
+    display:inline-block;
+}
+
+.modal-content-show {
+    display: block;
+} 
+
+.maps img {
+    cursor: pointer;
+}
+
+.services .active {
     display: block;
 }
